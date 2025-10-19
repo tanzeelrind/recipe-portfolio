@@ -17,31 +17,22 @@ A full-stack Django web application to manage recipes. Users can create, update,
 
 ## Setup
 1. Clone the repo:
-   ```bash
-   git clone https://github.com/yourusername/recipe-portfolio.git
-Create virtual environment:
+   git clone https://github.com/tanzeelrind/recipe-portfolio.git
 
-bash
-Copy code
+**Create virtual environment:**
 python -m venv venv
 venv\Scripts\activate
-Install requirements:
 
-bash
-Copy code
+**Install requirements:**
 pip install -r requirements.txt
-Run migrations:
 
-bash
-Copy code
+**Run migrations:**
 python manage.py migrate
-Run server:
 
-bash
-Copy code
+**Run server:**
 python manage.py runserver
-Note:
 
+
+**Note:**
 Set your Google OAuth credentials in .env.
-
 Media files are not included.
