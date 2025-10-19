@@ -1,12 +1,21 @@
-# Recipe Portfolio Project
+# Django Recipe Portfolio
 
-A Django web application to manage and showcase recipes. Features:
+A full-stack Django web application to manage recipes. Users can create, update, and delete recipes with images and Google OAuth login.
 
-- User signup/login
+## Features
+- User authentication with Django + Google OAuth
 - CRUD operations for recipes
-- Google Sign-In authentication
-- Image uploads
+- Image upload for recipes
+- Search recipes by name
+- Responsive design
+
+## Tech Stack
+- Python 3.13
+- Django 4.x
+- HTML/CSS/Bootstrap
+- SQLite (default)
 
 ## Setup
-
-1. Clone repository:
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/tanzeelrind/recipe-portfolio.git
