@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{%block start%}
+<style>
+  /* Remove textarea resize corner lines */
+  textarea.form-control {
+    resize: none;
+    height: 10px; /* adjust height as needed */
+  }
+</style>
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand">Update Your Recipe </a>
+</nav>
+<div class="container mt-5">
+<form class=" col-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+  {%csrf_token%}
+  <h1>Update Recipe</h1>
+  <hr>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name Of Recipe</label>
+    <input type="text" class="form-control" name="recipe_name" placeholder="Enter Recipe Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Recipe Ingridients</label>
+    <textarea type="text" class="form-control" name="description" placeholder="Ingridients"></textarea>
+  </div>
+  <div class="form-group">
+    <label>Upload File</label>
+    <input name="recipe_image" type="file" class="form-control">
+  </div>
+    <hr>
+  <button type="submit" class="btn btn-success">Update</button>
+</form>
+</div>
+{%endblock%}
